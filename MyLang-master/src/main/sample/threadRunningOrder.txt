@@ -1,0 +1,19 @@
+print(0);
+parallel{
+    thread {print(1);
+              parallel{
+                 thread {print(2);}
+                 thread {print(3);}
+                 }
+              }
+    }
+print (4);
+parallel{
+     thread {print(5);}
+     thread {print(6);}
+    }
+print (7);
+parallel{
+     thread {print(8);}
+     thread {print(9);}
+    }

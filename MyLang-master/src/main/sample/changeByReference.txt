@@ -1,0 +1,12 @@
+function void changeReference (int x&, int y&){
+    x = x + 2;
+    y = y + 6;
+    return;
+}
+int i = 4;
+int d = 5;
+pointer b = i;
+pointer c = d;
+run(changeReference(b,c));
+print(i);
+print(d);
